@@ -5,7 +5,7 @@
     <title>Protfolio Page </title>
     <style>
         body {
-            background-color: rgb(120, 143, 236);
+            background-color: rgb(1, 13, 61);
             color: rgb(0, 0, 0);
             margin: auto;
 
@@ -13,11 +13,11 @@
 
         nav {
             display: flex;
-            margin: 0px;
+            
             justify-content: space-around;
             align-items: center;
-            height: 150px;
-            background-color: rgb(117, 138, 222);
+            height: 116px ;
+            background-color: rgb(2, 17, 79);
         }
 
         nav ul {
@@ -29,31 +29,57 @@
         nav ul li {
             list-style-type: none;
             margin: 0 23px;
-            font-size: 30px;
+            font-size: 20px;
+            color: white;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(205, 205, 248);
+            font-size: 1.4rem;
+            
+        }
+      
 
         .Left {
             font-size: 50px;
+            color: white;
         }
 
         .Firstsection {
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            
+            align-items: center;
+            margin: 53px 0;
 
         }
 
-        .Firstsection div {
-            width: 30%;
+        .Firstsection >div {
+           
+           width: 30%;
+            margin: 50px;
         }
 
-        .Leftsection {}
+        .Leftsection {
+            font-size: 2rem;
+            /* margin: 30px 0; */
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
 
         .Rightsection img {
-            width: 500px;
-            
+            width: 100%;
 
 
+
+        }
+
+        .span {
+            color: rgb(149, 149, 237);
         }
     </style>
 </head>
@@ -65,10 +91,10 @@
                 Ritam's Protfolio </div>
             <div class="Right">
                 <ul>
-                    <li ><a class="active" href="/"><i class="fa fa-fw fa-about"></i>About</a></li>
-                    <li>Skills</li>
-                    <li>Project</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">About </a> </li>
+                    <li><a href="/">Skills </a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me </a></li>
                 </ul>
             </div>
         </nav>
@@ -76,8 +102,10 @@
     <main>
         <section class="Firstsection">
 
-            <div class="Leftsection">👋Hi..., I'm RitamNaskar,
-                I'm interested in web devolopment 
+            <div class="Leftsection">👋Hi..., I'm <span class="span">RitamNaskar,</span>
+                <br>
+                <br>
+                <span id="element"></span>
 
             </div>
 
@@ -90,7 +118,20 @@
 
 
         </section>
+<section class="Secondsection">
+
+</section>
+
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+
+var typed = new Typed('#element',{strings: ['<i>I am interested in web devolopment and i make a Protfolio page for a web devolopment Project</i> '],  typeSpeed: 50,
+    });
+
+    </script>
 
 </body>
 
