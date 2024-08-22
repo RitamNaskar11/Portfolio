@@ -55,13 +55,13 @@
             justify-content: space-around;
 
             align-items: center;
-            margin: 53px 0;
+            margin: 5px 0;
 
         }
 
         .Firstsection>div {
 
-            width: 30%;
+            width: 40%;
             margin: 50px;
         }
 
@@ -71,15 +71,70 @@
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+
         }
 
         .Rightsection img {
-            width: 100%;
+            height: 390px;
+            width: 104%;
 
+        }
+
+        main hr {
+            width: 91%;
+            margin: auto;
         }
 
         .span {
             color: rgb(149, 149, 237);
+        }
+
+        .Secondsection h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .Secondsection {
+            color: white;
+            max-width: 80vw;
+            margin: auto;
+            font-size: 30px;
+            height: 57vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        .Thirdsection h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .Thirdsection {
+            color: white;
+            max-width: 80vw;
+            margin: auto;
+            font-size: 25px;
+            height: 80vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        button {
+            padding: 9px;
+            font-size: 15px;
+            border: 1px solid #f1f1f1;
+            border-radius: 35px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c290f7;
         }
     </style>
 </head>
@@ -105,10 +160,17 @@
     <main>
         <section class="Firstsection">
 
-            <div class="Leftsection">👋Hi..., I'm <span class="span">RitamNaskar,</span>
+            <div class="Leftsection"> Hi, <span class="span">Welcome to My Portfolio!</span>
+                <div> I'm a passionate BCA student with a strong interest in frontend web development...</div>
                 <br>
-                <br>
-                <span id="element"></span>
+
+                <!-- <span id="element"></span> -->
+
+                <div class="buttons">
+                    <button class="btn">Download CV</button>
+
+                    <button class="btn">Resume</button>
+                </div>
 
             </div>
 
@@ -118,24 +180,54 @@
             </div>
 
 
+        </section>
 
+
+
+
+
+        <hr>
+
+        <section class="Secondsection">
+            <h1> About</h1>
+
+            <div>Hi, I'm Ritam, a passionate BCA student with a strong interest in frontend web development. My journey
+                in tech began with a curiosity about how the web works, leading me to explore HTML, CSS, and JavaScript.
+                I thrive on transforming creative ideas into responsive and user-friendly websites. With a keen eye for
+                design and a dedication to continuous learning, I'm working towards becoming a skilled frontend
+                developer. I'm excited to contribute to projects that make a difference and push the boundaries of web
+                design and development.
+
+            </div>
 
         </section>
-        <section class="Secondsection">
+        <hr>
+        <section class="Thirdsection">
+            <h1>Skills</h1>
+            <ul>
+                <li>HTML5 & CSS3: Proficient in creating semantic and responsive layouts.</li>
+                <br>
+                <li>Version Control: Experience using Git and GitHub for collaborative projects.</li>
+                <br>
+                <li>JavaScript: Knowledgeable in some JavaScript features</li>
+                <br>
+            </ul>
 
         </section>
 
     </main>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
 
-    <script>
+    <!-- <script> -->
 
-        var typed = new Typed('#element', {
-            strings: ['<i>I am interested in web devolopment and i make a Protfolio page for a web devolopment Project. 👀</i> '], typeSpeed: 50,
-        });
+    <!-- var typed = new Typed('#element', { -->
+    <!-- strings: ['<i>I am interested in web devolopment and i make a Protfolio page for a web devolopment Project. 👀</i> '], typeSpeed: 50, -->
+    <!-- }); -->
 
-    </script>
+
+    <!-- </script> -->
+
 
 </body>
 
